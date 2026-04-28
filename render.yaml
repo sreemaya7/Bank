@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: javabank
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    branch: main
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8080
